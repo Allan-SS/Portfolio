@@ -1,0 +1,62 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .bg-light {
+    background-color: pink !important;
+} */
+nav {
+    border-bottom: 0.313rem solid #494E5F;
+}
+
+.text-light {
+    color: #FF914D !important;
+}
+
+#home {
+    color: white;
+    background: no-repeat;
+    background-size: 100%;
+    background-image: url(./assets/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg);
+}
+
+#text-home {
+    margin: 6.5rem;
+}
+
+#text-name {
+    font-size: 4rem;
+    font-weight: 43.75rem;
+}
+
+#img-about {
+    background-color: #494E5F;
+  width: 190rem;
+}
+
+.container-skills{
+    display: flex;
+}
+
+.card{
+    margin: 10px;
+    transition: transform 200ms ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.4);
+}
+
+section {
+    padding-top: 6.25rem;
+}
+

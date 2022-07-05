@@ -1,62 +1,126 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* .bg-light {
-    background-color: pink !important;
-} */
 nav {
-    border-bottom: 0.313rem solid #494E5F;
+  border-bottom: 0.313rem solid #494e5f;
 }
 
 .text-light {
-    color: #FF914D !important;
+  color: #ff914d !important;
 }
 
 #home {
-    color: white;
-    background: no-repeat;
-    background-size: 100%;
-    background-image: url(./assets/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg);
+  color: white;
+  background: no-repeat;
+  background-size: 100%;
+  background-image: url(./assets/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg);
+}
+
+#btn-hi {
+  width: 6.25rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.625rem;
+  color: white;
+  background-color: #494e5f;
+  transition: transform 200ms ease-in-out;
+}
+
+#btn-hi:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#btn-hi:active {
+  background-color: #ff914d;
 }
 
 #text-home {
-    margin: 6.5rem;
+  margin: 6.5rem;
 }
 
 #text-name {
-    font-size: 4rem;
-    font-weight: 43.75rem;
+  font-size: 4rem;
+  font-weight: 43.75rem;
 }
 
 #img-about {
-    background-color: #494E5F;
+  background-color: #494e5f;
   width: 190rem;
 }
 
-.container-skills{
-    display: flex;
+.container-skills {
+  display: flex;
 }
 
-.card{
-    margin: 10px;
-    transition: transform 200ms ease-in-out;
+.card-img-top {
+  width: 6.25rem;
 }
 
-.card:hover{
-    transform: scale(1.05);
-    box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.4);
+.card {
+  width: 10rem;
+  padding-top: 0.625rem;
+  margin: 1.25rem 1.875rem;
+  border: none;
+  align-items: center;
+  transition: transform 200ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.4);
 }
 
 section {
-    padding-top: 6.25rem;
+  padding-top: 6.25rem;
 }
 
+/* ANIMATION --> */
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}

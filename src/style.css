@@ -216,7 +216,7 @@ footer {
   }
 
   #text-home {
-    padding-top: 7.5rem;
+    padding-top: 4.5rem;
     margin: 2rem;
   }
 
@@ -241,7 +241,8 @@ footer {
   display: flex;
   justify-content: center;
   z-index: 1;
-  margin-bottom: -9.8rem;
+  margin: 10rem 0 -7rem 0;
+  }
 }
 
 #img-contact {
@@ -279,6 +280,9 @@ footer {
   justify-content: flex-end;
   padding-top: 8rem;
 }
+
+.container-img-about {
+  width: auto;
 }
 
 @media (max-width: 600px) {
@@ -320,7 +324,7 @@ footer {
   display: flex;
   justify-content: center;
   z-index: 1;
-  margin-bottom: -9.8rem;
+    margin: 10rem 0 -7rem 0;
 }
 
 #img-contact {
@@ -357,6 +361,10 @@ footer {
   align-items: center;
   justify-content: flex-end;
   padding-top: 8rem;
+}
+
+.container-img-about {
+  width: auto;
 }
 
 }

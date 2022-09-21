@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/coding.ico" />
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -15,9 +16,9 @@
   <title>Allan Silva</title>
 </head>
 
-<body class="fw-bolder">
+<body class="selector fw-bolder">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand d-flex" href="#home">
           <img src="./assets/coding.png" alt="logo code" style="width: 50px" class="mx-2" />
@@ -44,9 +45,11 @@
               <a class="nav-link" href="#contact">Contato</a>
             </li>
             <li class="nav-item me-3">
-              <form method="post" action="mailto:allansousasilva1@gmail.com">
-                <input class="btn btn-animation btn-animation btn-dark" type="submit" value="Diga Oi!" />
-              </form>
+              <a href="mailto:allansousasilva1@gmail.com">
+                <button class="btn btn-default btn-animation">
+                  Diga Oi!
+                </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -94,13 +97,12 @@
           </p>
         </div>
         <div class="container-img-about">
-          <img id="img-about" class="img-thumbnail" src="./assets/IMG_20210508_005453_404.jpg"
-            alt="imagem sobre mim" />
+          <img id="img-about" class="img-thumbnail" src="./assets/Photo-description.jpg" alt="imagem sobre mim" />
         </div>
       </div>
     </section>
     <section id="skills" class="container">
-      <h2>Habilidades</h2>
+      <h1 class="text-uppercase fw-bold text-light">Habilidades</h1>
       <div class="container-skills row row-cols-5">
         <div class="card-skills col">
           <img src="./assets/html-5.png" class="card-img-top" alt="logo-html" />
@@ -151,7 +153,7 @@
           </div>
         </div>
         <div class="card-skills col">
-          <img src="./assets/bootstrap-logo-shadow.png" class="card-img-top" alt="logo-bootstrap" />
+          <img src="./assets/bootstrap.png" class="card-img-top" alt="logo-bootstrap" />
           <div class="card-body">
             <p class="card-text">BOOTSTRAP</p>
           </div>
@@ -172,7 +174,7 @@
         <div class="card mb-3">
           <div class="row">
             <div class="col-md-4">
-              <img src="./assets/Design sem nome (2).png" class="img-fluid rounded-start" alt="..." />
+              <img src="./assets/Pokemon.png" class="img-fluid rounded-start" alt="..." />
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -182,9 +184,30 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <a type="link" href="https://www.google.com" target="_blank" class="btn btn-animation btn-dark">Web</a>
+                <a type="link" href="https://www.google.com" target="_blank"
+                  class="btn btn-animation btn-default">Web</a>
                 <a type="link" href="https://github.com/Allan-SS/Pokemon-react" target="_blank"
-                  class="btn btn-animation btn-dark">Code</a>
+                  class="btn btn-animation btn-default">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./assets/Photo-description.jpg" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-3">PROJETO</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a type="link" href="https://www.google.com" target="_blank"
+                  class="btn btn-animation btn-default">Web</a>
+                <a type="link" href="#" target="_blank" class="btn btn-animation btn-default">Code</a>
               </div>
             </div>
           </div>
@@ -202,105 +225,56 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <a type="link" href="https://www.google.com" target="_blank" class="btn btn-animation btn-dark">Web</a>
-                <a type="link" href="#" target="_blank" class="btn btn-animation btn-dark">Code</a>
+                <a type="link" href="https://www.google.com" target="_blank"
+                  class="btn btn-animation btn-default">Web</a>
+                <a type="link" href="#" target="_blank" class="btn btn-animation btn-default">Code</a>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="./assets/IMG_20210508_005453_404.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title fs-3">PROJETO</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <a
-                    type="link"
-                    href="https://www.google.com"
-                    target="_blank"
-                    class="btn btn-animation btn-dark"
-                    >Web</a
-                  >
-                  <a
-                    type="link"
-                    href="#"
-                    target="_blank"
-                    class="btn btn-animation btn-dark"
-                    >Code</a
-                  >
-                </div>
+        <div class="card mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./assets/IMG_20210508_005453_404.jpg" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-3">PROJETO</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a type="link" href="https://www.google.com" target="_blank"
+                  class="btn btn-animation btn-default">Web</a>
+                <a type="link" href="#" target="_blank" class="btn btn-animation btn-default">Code</a>
               </div>
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="./assets/IMG_20210508_005453_404.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title fs-3">PROJETO</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <a
-                    type="link"
-                    href="https://www.google.com"
-                    target="_blank"
-                    class="btn btn-animation btn-dark"
-                    >Web</a
-                  >
-                  <a
-                    type="link"
-                    href="#"
-                    target="_blank"
-                    class="btn btn-animation btn-dark"
-                    >Code</a
-                  >
-                </div>
-              </div> -->
-      </div>
-      </div>
+        </div>
       </div>
     </section>
     <div id="container-img-contact">
-      <img id="img-contact" class="img-thumbnail" src="./assets/Design sem nome.png" alt="imagem sobre mim" />
+      <img id="img-contact" class="img-thumbnail" src="./assets/Photo-footer.png" alt="imagem sobre mim" />
     </div>
     <footer id="contact" class="h-50">
-      <div class="container-information">
-        <h3 class="fs-3">Allan Sousa Silva</h3>
-        <p class="text-contact">Se você quiser entrar em contato para falar sobre um novo projeto ou apenas dizer "Olá", envie-me um e-mail.</p>
-        <a class="title-email" href="mailto:allansousasilva1@gmail.com">
-          <h5 >allansousasilva1@gmail.com</h5>
+      <div class="container-apps-contact">
+        <a target="_blank" href="https://www.linkedin.com/in/allan-sousa-silva/">
+          <img class="img-app" src="./assets/linkedin.svg" alt="imagem-Linkedin" />
+        </a>
+        <a target="_blank" href="https://drive.google.com/file/d/1RBgwfrxeyftpNBlvEDMC9yiRhUeA1R3G/view?usp=sharing">
+          <img class="img-app" src="./assets/currículo.png" alt="imagem-CV" />
+        </a>
+        <a target="_blank" href="https://github.com/Allan-SS">
+          <img class="img-app" src="./assets/github.svg" alt="imagem-GitHub" />
         </a>
       </div>
-      <div class="container-apps-contact">
-        <a  target="_blank"  href="https://www.linkedin.com/in/allan-sousa-silva/">
-          <img class="img-app" src="./assets/linkedin.png" alt="imagem-Linkedin" />
+      <div class="container-information">
+        <a class="title-email" href="mailto:allansousasilva1@gmail.com">
+          <p>allansousasilva1@gmail.com</p>
         </a>
-        <a  target="_blank"  href="https://drive.google.com/file/d/1RBgwfrxeyftpNBlvEDMC9yiRhUeA1R3G/view?usp=sharing">
-          <img class="img-app" src="./assets/cv.png" alt="imagem-CV" />
-        </a>
-        <a  target="_blank"  href="https://github.com/Allan-SS">
-          <img class="img-app" src="./assets/github.png" alt="imagem-GitHub" />
-        </a>
+        <p class="text-contact mb-0">© 2022 Created by Allan Silva.</p>
+        <p class="text-contact my-0">All rights reserved.</p>
       </div>
     </footer>
   </main>

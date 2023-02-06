@@ -18,21 +18,21 @@ body {
 } */
 
 :root {
-  --primary-color: #222831;
-  --secondary-color: #00adb5;
-  --neutral-color: #393e46;
-  --font-color: white;
+  --standart-color: #222831;
+  --primary-color: #00adb5;
+  --secondry-color: #393e46;
+  --neutral-color: white;
   --shadow-standart: 0.125rem 0.25rem 0.725rem rgba(0, 0, 0, 0.085);
 }
 
 span,
 .nav-link {
-  color: var(--font-color) !important;
+  color: var(--neutral-color) !important;
 }
 
 nav {
-  background-color: var(--primary-color);
-  border-bottom: 0.313rem solid var(--secondary-color);
+  background-color: var(--standart-color);
+  border-bottom: 0.313rem solid var(--primary-color);
 }
 
 .navbar-toggler-icon span {
@@ -40,22 +40,22 @@ nav {
 }
 
 .text-light {
-  color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .btn-default {
-  color: var(--font-color);
-  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  background-color: var(--primary-color);
 }
 
 .btn-default:hover {
-  color: var(--font-color);
+  color: var(--neutral-color);
   background-color: #018e96;
   transition: background-color 450ms ease-in-out;
 }
 
 #home {
-  color: var(--font-color);
+  color: var(--neutral-color);
   background: no-repeat;
   background-size: 100%;
   background-image: url(./assets/Background.jpg);
@@ -122,13 +122,26 @@ nav {
   max-width: 33.75rem;
   margin: 3.125rem 1.25rem;
   border: none;
-  transition: transform 200ms ease-in-out;
+  transition: transform 400ms ease-in-out;
   box-shadow: var(--shadow-standart);
+  background-color: var(--neutral-color);
 }
 
 .card:hover {
-  transform: scale(1.06);
-  box-shadow: var(--shadow-standart);
+  transform: scale(1.04);
+}
+
+/* .card-title {
+  color: var(--standart-color);
+  transition: 700ms ease-in-out;
+} */
+
+.card-text {
+  color: var(--standart-color); 
+}
+
+.img-projects {
+  width: 200px;
 }
 
 #container-img-contact {
@@ -166,6 +179,7 @@ footer {
   border-radius: 50%;
   transition: transform 200ms ease-in-out;
   box-shadow: var(--shadow-standart);
+  margin-bottom: 1.25rem;
 }
 
 .img-app:hover {
@@ -184,12 +198,12 @@ footer {
 .text-contact {
   margin: 2rem 0;
   width: auto;
-  color: var(--font-color);
+  color: var(--neutral-color);
 }
 
 .title-email {
   font-size: 30px;
-  color: var(--font-color);
+  color: var(--neutral-color);
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -202,9 +216,6 @@ footer {
   width: 13rem;
 }
 
-.img-app {
-  margin-bottom: 1.25rem;
-}
 
 /* ANIMATION --> */
 
@@ -245,6 +256,42 @@ footer {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
+
+
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+
+ /* MEDIA QUERY --> */
 
 @media only screen and (max-width: 768px) {
   .h-100 {
@@ -305,6 +352,10 @@ footer {
   .title-email {
     font-size: 20px;
   }
+  
+  .img-projects {
+  width: 100%;
+}
 }
 
 @media (max-width: 600px) {

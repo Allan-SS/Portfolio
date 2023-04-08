@@ -137,6 +137,7 @@ nav {
 } */
 
 .card-text {
+  font-size: 14px;
   color: var(--standart-color); 
 }
 
@@ -318,7 +319,7 @@ footer {
   }
 
   #text-name {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #text-description {
